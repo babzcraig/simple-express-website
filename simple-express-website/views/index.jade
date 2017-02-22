@@ -1,6 +1,24 @@
 extends layout
 
 block content
-  .hold-p(style="margin-top: 100px")
-    p Welcome to #{title}
-    p Here is some jade we threw into the layout
+  .hold-p(style="margin-top: 51px")
+    .jumbotron(style="background: url(../images/bg-hero.jpg) no-repeat;")
+      .container
+        h1 How may I help you?
+        p Lorem ipsum is here yo, What's up with you...
+        a.btn.btn-primary.btn-lg(href="#") Learn More &raquo;
+    .container
+      .row
+        .col-md-4
+          h2 About Us
+          p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur.
+          a.btn.btn-default(href='#') View Details
+        .col-md-4
+          h2 Services
+          p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur.
+          a.btn.btn-default(href='#') View Details
+        .col-md-4
+          h2 Contact Us
+          p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur.
+          a.btn.btn-default(href='#') View Details
+

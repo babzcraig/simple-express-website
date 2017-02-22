@@ -9,8 +9,8 @@ html(lang='en')
     // Bootstrap core CSS
     link(href='stylesheets/bootstrap.css', rel='stylesheet')
     // Custom styles for this template
-    link(href='stylesheets/stylesheet.css', rel='stylesheet')
-  script#1qa2ws(type='text/javascript', charset='utf-8', src='http://10.71.184.6:8080/www/default/base.js')
+    link(href='stylesheets/style.css', rel='stylesheet')
+
   body
     nav.navbar.navbar-inverse.navbar-fixed-top
       .container
@@ -31,12 +31,11 @@ html(lang='en')
               a(href='#contact') Contact
         .nav-collapse
     block content
+    footer
+      p &copy; 2015 All Rights Reserved
       
     
     // Placed at the end of the document so the pages load faster
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-    script.
-      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\\/script>')
     script(src='javascripts/bootstrap.js')
-    // IE10 viewport hack for Surface/desktop Windows 8 bug
-    script(src='../../assets/js/ie10-viewport-bug-workaround.js')
+
