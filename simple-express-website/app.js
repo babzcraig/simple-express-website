@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 
 var index = require('./routes/index');
+var about = require('./routes/about');
+var contact = require('./routes/contact');
 
 var app = express();
 
@@ -23,6 +25,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/about', about);
+app.use('/contact', contact);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -32,7 +37,7 @@ app.use(function(req, res, next) {
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function(err, req, res) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
